@@ -87,6 +87,11 @@ func newConfigManager(logger *slog.Logger, cfg Config, debug bool) *cniConfigMan
 		cfg.CNIExternalRouting = true
 	}
 
+	if cfg.CNIChainingMode == "oci" && cfg.CNIChainingTarget == "" {
+		cfg.CNIChainingTarget = "oci"
+		cfg.CNIExternalRouting = true
+	}
+
 	if cfg.CNIChainingTarget != "" && cfg.CNIChainingMode == "" {
 		cfg.CNIChainingMode = "generic-veth"
 	}
