@@ -782,6 +782,7 @@ cni:
   #  - aws-cni
   #  - flannel
   #  - generic-veth
+  #  - oci
   #  - portmap
   chainingMode: ~
   # @schema
