@@ -50,6 +50,7 @@ import (
 	_ "github.com/cilium/cilium/plugins/cilium-cni/chaining/azure"
 	_ "github.com/cilium/cilium/plugins/cilium-cni/chaining/flannel"
 	_ "github.com/cilium/cilium/plugins/cilium-cni/chaining/generic-veth"
+	_ "github.com/cilium/cilium/plugins/cilium-cni/chaining/oracle"
 	"github.com/cilium/cilium/plugins/cilium-cni/lib"
 	"github.com/cilium/cilium/plugins/cilium-cni/types"
 )
